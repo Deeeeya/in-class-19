@@ -1,0 +1,6 @@
+CISC 3300 SP25 
+In class assignment 19 
+1. A built-in class that comes packaged with PHP to make it very easy for you to interact with databases, represents and manages the connection to the database: PDO               2. The Data Source Name is a string that contains information about our connection to the database                                                                                                                              3. In homework going forward/final project there will be a deduction of points if you submit your .env file or the information intended to be on it!!! 
+4. A prepared statement is a parameterized and reusable SQL query which forces the developer to write the SQL command and the user-provided data separately. 
+5. A SQL injection is when a hacker tries to run malicious sql code in a database. 
+6. Create a PHP application that when a URI of /posts is visited in a browser, data from a posts MySQL table is returned as JSON(Make a posts table with appropriate columns and inject some data). Be sure to make a .env file to store your db credentials and not submit the .env by using a .gitignore file.

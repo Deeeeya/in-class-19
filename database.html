@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>In Class 19</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $.getJSON("index.php", function (data) {
+          if (data.error) {
+            $("#posts-list").append(`<p>Error: ${data.error}</p>`);
+          } else {
+            data.forEach((post) => {
+              $("#posts-list").append(`<p>{$post.title}: {$post.content}</p>`);
+            });
+          }
+        }).fail(function () {
+          $("#posts-list").append("<p>Error</p>");
+        });
+      });
+    </script>
+  </body>
+</html>
